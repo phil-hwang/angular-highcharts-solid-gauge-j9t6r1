@@ -31,7 +31,37 @@ export class AppComponent {
                 lineWidth: 0,
                 tickPositions: [],
                 stops: [
-                  [1, '#9CFFB8'],
+                  [
+                    0.5,
+                    {
+                      linearGradient: {
+                        x1: 0.5,
+                        x2: 0.5,
+                        y1: 0,
+                        y2: 1,
+                      },
+                      stops: [
+                        [0, '#ff5f6d'],
+                        [1, '#692895'],
+                      ],
+                    },
+                  ],
+                  [
+                    1,
+                    {
+                      linearGradient: {
+                        x1: 1,
+                        x2: 0,
+                        y1: 0,
+                        y2: 1,
+                      },
+                      stops: [
+                        [0, '#ff5f6d'],
+                        [0.5, '#692895'],
+                        [1, '#0746E2'],
+                      ],
+                    },
+                  ],
                 ],
               },
         
